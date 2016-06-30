@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8" />
+		<title>力工网</title>
+	</head>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<script src="js/jquery-1.7.2.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
+	<style type="text/css">
+		.header a{
+			color: #555555;
+		}
+		body{
+			background-color: #AFD9EE;
+		}
+	</style>
+	<script type="text/javascript">
+		$(function(){
+            var mycity = remote_ip_info['city'];
+            //alert(mycity);
+            $("#city").html('你现在所在城市为：'+mycity);
+        });
+	</script>
+	<body>
+		<div class="container-fluid header">
+			<!--
+            	作者：490367243@qq.com
+            	时间：2016-06-29
+            	描述：导航
+            -->
+			<nav class="navbar navbar-fixed-top bg-info" style="background-color: #5BC0DE;">
+				<!--
+                	作者：490367243@qq.com
+                	时间：2016-06-29
+                	描述：左边
+                -->
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand glyphicon" href="#" style="font-size: 2em;"><b>力工网</b></a>
+					</div>
+					<!--
+		              	作者：490367243@qq.com
+		              	时间：2016-06-30
+		              	描述：分享
+		             -->
+		            <ul class="nav navbar-nav">
+		            	<li>
+		            		<div class="bdsharebuttonbox" id="shareDiv">
+					            <input type="hidden" id="fx" /> <a class="bds_mshare" data-cmd="mshare"></a>
+							    <a class="bds_qzone" data-cmd="qzone" href="#"></a>
+							    <a class="bds_tsina" data-cmd="tsina"></a>
+							    <a class="bds_baidu" data-cmd="baidu"></a>
+							    <a class="bds_renren" data-cmd="renren"></a>
+							    <a class="bds_tqq" data-cmd="tqq"></a>
+							    <a class="bds_more" data-cmd="more">更多</a>
+							    <a class="bds_count" data-cmd="count"></a>
+				        	</div>
+		            	</li>
+		            </ul>
+				  	
+					<!--
+                	作者：490367243@qq.com
+                	时间：2016-06-29
+                	描述：右边
+                	-->
+                	<ul class="nav navbar-nav navbar-right">
+                		<li><a href="#">找工人</a></li>
+                		<li><a href="#">找工作</a></li>
+                		<li><a href="#">找材料</a></li>
+                		<li><a href="#">项目外包</a></li>
+                		<li><a href="#">跑腿</a></li>
+                		<li><a href="#">联系我们</a></li>
+                		<li><a href="#">关于我们</a></li>
+                	</ul>
+				</div>
+                
+			</nav>
+		</div>
+			<!--<div class="navbar-fixed-top bg-info">
+				<div class="pull-left">
+					
+				</div>
+				<div class="pull-right">
+					
+				</div>
+				<div class="clearfix"></div>
+			</div>-->
+		<!--
+        	作者：490367243@qq.com
+        	时间：2016-06-29
+        	描述：这里是巨幅展示
+        -->
+		<div class="jumbotron col-xs-10 col-xs-push-1" style="margin-bottom: 0px;background-color: rgb(191,138,104);">
+			<h3 id="city">地址</h3>
+		  	<p>省份</p>
+		  	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+		</div>	
+		<div class="container col-xs-10 col-xs-push-1" style="height: 1000px; background-color: rgb(189,171,149);">
+			<div class="">
+				<h1>找工人</h1>
+			</div>
+			<table class="table table-hover table-responsive" style="text-align: center; margin-bottom: 0px;">
+				<!-- On rows -->
+				<tr>
+				  <td>名字</td>
+				  <td>性别</td>
+				  <td>年纪</td>
+				  <td>技能</td>
+				  <td>工作年限</td>
+				</tr>
+				
+				<!-- On cells (`td` or `th`) -->
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+			</table>
+			
+			<nav>
+			  	<ul class="pagination">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+			  	</ul>
+			</nav>
+			
+			<div class="">
+				<h1>找工作</h1>
+			</div>
+			<table class="table table-hover table-responsive" style="text-align: center;margin-bottom: 0px;">
+				<!-- On rows -->
+				<tr>
+				  <td>名字</td>
+				  <td>性别</td>
+				  <td>年纪</td>
+				  <td>技能</td>
+				  <td>工作年限</td>
+				</tr>
+				
+				<!-- On cells (`td` or `th`) -->
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+			</table>
+			<nav>
+			  	<ul class="pagination">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+			  	</ul>
+			</nav>
+			<div class="">
+				<h1>项目外包</h1>
+			</div>
+			<table class="table table-hover table-responsive" style="text-align: center;margin-bottom: 0px;">
+				<!-- On rows -->
+				<tr>
+				  <td>名字</td>
+				  <td>性别</td>
+				  <td>年纪</td>
+				  <td>技能</td>
+				  <td>工作年限</td>
+				</tr>
+				
+				<!-- On cells (`td` or `th`) -->
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+				<tr>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				  <td>...</td>
+				</tr>
+			</table>
+			<nav>
+			  	<ul class="pagination">
+				    <li>
+				      <a href="#" aria-label="Previous">
+				        <span aria-hidden="true">&laquo;</span>
+				      </a>
+				    </li>
+				    <li><a href="#">1</a></li>
+				    <li><a href="#">2</a></li>
+				    <li><a href="#">3</a></li>
+				    <li><a href="#">4</a></li>
+				    <li><a href="#">5</a></li>
+				    <li>
+				      <a href="#" aria-label="Next">
+				        <span aria-hidden="true">&raquo;</span>
+				      </a>
+				    </li>
+			  	</ul>
+			</nav>
+		</div>
+		
+	</body>
+	<script>
+        window._bd_share_config = {
+                    "common" : {
+                        "bdSnsKey" : {},
+                        "bdText" : "",
+                        "bdMini" : "2",
+                        "bdMiniList" : false,
+                        "bdPic" : "",
+                        "bdStyle" : "0",
+                        "bdSize" : "16"
+                    },
+                    "share" : {}
+                };
+                with (document)
+                    0[(getElementsByTagName('head')[0] || body)
+                            .appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='
+                            + ~(-new Date() / 36e5)];
+        
+    </script>
+</html>
