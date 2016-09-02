@@ -9,264 +9,112 @@
 	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 	<script type="text/javascript" src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script>
 	<style type="text/css">
-		.header a{
-			color: #555555;
+		.all,.navs{
+			width: 100%;
+			height: 100%;
 		}
-		body{
-			background-color: #AFD9EE;
+		.head,.content,.navs_content{
+			width: 1000px;
+			height: auto;
+			margin: 10px auto;
+		}
+		.head_son{
+			float: left;
+		}
+		.head_son button{
+			float: right;
+			margin-left: 20px;
+		}
+		.navs_tem{
+			width: 120px;
+			height: 40px;
+			float: left;
+			text-align: center;
+			cursor: pointer;
+			font-size: large;
+		}
+		.tem_hover{
+			background-color: #00b0c8;
+			color: white;
+		}
+		.content_son{
+			float: left;
+			margin-top: 20px;
+		}
+		.content_left{
+			width: 700px;
+			height: 1000px;
+		}
+		.content_right{
+			width: 270px;
+			margin-left: 30px;
+			background-color: #286090;
+			height: 1000px;
 		}
 	</style>
 	<script type="text/javascript">
 		$(function(){
-            var mycity = remote_ip_info['city'];
-            $("#city").html('你现在所在城市为：'+mycity);
+			$(".navs_tem").click(function(){
+				$(this).siblings().removeClass("tem_hover");
+				$(this).addClass("tem_hover");
+			});
         });
 	</script>
 	<body>
-		<div class="container-fluid header">
-			<!--
-            	作者：490367243@qq.com
-            	时间：2016-06-29
-            	描述：导航
-            -->
-			<nav class="navbar navbar-fixed-top bg-info" style="background-color: #5BC0DE;">
-				<!--
-                	作者：490367243@qq.com
-                	时间：2016-06-29
-                	描述：左边
-                -->
-				<div class="container-fluid">
-					<div class="navbar-header">
-						<a class="navbar-brand glyphicon" href="index.html" style="font-size: 2em;"><b>力工网</b></a>
+		<div class="all">
+			<div class="head">
+				<div class="header_content" style="height: 100px;line-height: 100px;">
+					<div class="head_son head_title" style="width: 150px;">
+						<font size="6"><b>力工网</b></font> 
 					</div>
-					<!--
-		              	作者：490367243@qq.com
-		              	时间：2016-06-30
-		              	描述：分享
-		             -->
-		            <ul class="nav navbar-nav">
-		            	<li>
-		            		<div class="bdsharebuttonbox" id="shareDiv">
-					            <input type="hidden" id="fx" /> <a class="bds_mshare" data-cmd="mshare"></a>
-							    <a class="bds_qzone" data-cmd="qzone" href="#"></a>
-							    <a class="bds_tsina" data-cmd="tsina"></a>
-							    <a class="bds_baidu" data-cmd="baidu"></a>
-							    <a class="bds_renren" data-cmd="renren"></a>
-							    <a class="bds_tqq" data-cmd="tqq"></a>
-							    <a class="bds_more" data-cmd="more">更多</a>
-							    <a class="bds_count" data-cmd="count"></a>
-				        	</div>
-		            	</li>
-		            </ul>
-				  	
-					<!--
-                	作者：490367243@qq.com
-                	时间：2016-06-29
-                	描述：右边
-                	-->
-                	<ul class="nav navbar-nav navbar-right">
-                		<li><a href="index.html">首页</a></li>
-                		<li><a href="find_worker.html">找工人</a></li>
-                		<li><a href="#">找工作</a></li>
-                		<li><a href="#">找材料</a></li>
-                		<li><a href="#">项目外包</a></li>
-                		<li><a href="#">跑腿</a></li>
-                		<li><a href="#">联系我们</a></li>
-                		<li><a href="#">关于我们</a></li>
-                	</ul>
+					<div class="head_son" style="width: 450px;">
+						<div class="phone" style="width: 50%; margin: 0 auto;">
+							<span class="glyphicon glyphicon-phone-alt"></span><font size="4">15673101754</font>
+						</div>
+						
+					</div>
+					<div class="head_son" style="width: 400px;height: 100%; line-height: 100%;">
+						<button class="btn btn-warning" style="margin-top: 33px; width: 100px;">登陆/注册</button>
+						<button class="btn btn-warning" style="margin-top: 33px;width: 100px;">找工作</button>
+						<button class="btn btn-warning " style="margin-top: 33px;width: 100px;">找工人</button>
+					</div>
 				</div>
-                
-			</nav>
-		</div>
-			<!--<div class="navbar-fixed-top bg-info">
-				<div class="pull-left">
-					
+			</div>
+			<div class="navs" style="background-color: rgb(244,244,244); height: 40px; line-height: 40px;">
+				<div class="navs_content">
+					<div class="navs_tem tem_hover">
+						首页
+					</div>
+					<div class="navs_tem">
+						家装
+					</div>
+					<div class="navs_tem">
+						工装
+					</div>
+					<div class="navs_tem">
+						土建
+					</div>
+					<div class="navs_tem">
+						家具订制
+					</div>
+					<div class="navs_tem">
+						小工
+					</div>
+					<div class="clearfix"></div>
 				</div>
-				<div class="pull-right">
+			</div>
+			<div class="content">
+				<div class="content_son content_left" style=" background-color: #00B0C8;">
+					<div class="main-img" style="width: 100%;height: 320px;background-image: url(img/57c3a6d2846fa.jpg);">
+						
+					</div>
+				</div>
+				<div class="content_son content_right">
 					
 				</div>
 				<div class="clearfix"></div>
-			</div>-->
-		<!--
-        	作者：490367243@qq.com
-        	时间：2016-06-29
-        	描述：这里是巨幅展示
-        -->
-		<div class="jumbotron col-xs-10 col-xs-push-1" style="margin-bottom: 0px;background-color: rgb(191,138,104);">
-			<h3 id="city">地址</h3>
-		  	<p>省份</p>
-		  	<p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
-		</div>	
-		<div class="container col-xs-10 col-xs-push-1" style="height: 1000px; background-color: rgb(189,171,149);">
-			<div class="">
-				<h1>找工人</h1>
 			</div>
-			<table class="table table-hover table-responsive" style="text-align: center; margin-bottom: 0px;">
-				<!-- On rows -->
-				<tr>
-				  <td>名字</td>
-				  <td>性别</td>
-				  <td>年纪</td>
-				  <td>技能</td>
-				  <td>工作年限</td>
-				</tr>
-				
-				<!-- On cells (`td` or `th`) -->
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-			</table>
-			
-			<nav>
-			  	<ul class="pagination">
-				    <li>
-				      <a href="#" aria-label="Previous">
-				        <span aria-hidden="true">&laquo;</span>
-				      </a>
-				    </li>
-				    <li><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">4</a></li>
-				    <li><a href="#">5</a></li>
-				    <li>
-				      <a href="#" aria-label="Next">
-				        <span aria-hidden="true">&raquo;</span>
-				      </a>
-				    </li>
-			  	</ul>
-			</nav>
-			
-			<div class="">
-				<h1>找工作</h1>
-			</div>
-			<table class="table table-hover table-responsive" style="text-align: center;margin-bottom: 0px;">
-				<!-- On rows -->
-				<tr>
-				  <td>名字</td>
-				  <td>性别</td>
-				  <td>年纪</td>
-				  <td>技能</td>
-				  <td>工作年限</td>
-				</tr>
-				
-				<!-- On cells (`td` or `th`) -->
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-			</table>
-			<nav>
-			  	<ul class="pagination">
-				    <li>
-				      <a href="#" aria-label="Previous">
-				        <span aria-hidden="true">&laquo;</span>
-				      </a>
-				    </li>
-				    <li><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">4</a></li>
-				    <li><a href="#">5</a></li>
-				    <li>
-				      <a href="#" aria-label="Next">
-				        <span aria-hidden="true">&raquo;</span>
-				      </a>
-				    </li>
-			  	</ul>
-			</nav>
-			<div class="">
-				<h1>项目外包</h1>
-			</div>
-			<table class="table table-hover table-responsive" style="text-align: center;margin-bottom: 0px;">
-				<!-- On rows -->
-				<tr>
-				  <td>名字</td>
-				  <td>性别</td>
-				  <td>年纪</td>
-				  <td>技能</td>
-				  <td>工作年限</td>
-				</tr>
-				
-				<!-- On cells (`td` or `th`) -->
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-				<tr>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				  <td>...</td>
-				</tr>
-			</table>
-			<nav>
-			  	<ul class="pagination">
-				    <li>
-				      <a href="#" aria-label="Previous">
-				        <span aria-hidden="true">&laquo;</span>
-				      </a>
-				    </li>
-				    <li><a href="#">1</a></li>
-				    <li><a href="#">2</a></li>
-				    <li><a href="#">3</a></li>
-				    <li><a href="#">4</a></li>
-				    <li><a href="#">5</a></li>
-				    <li>
-				      <a href="#" aria-label="Next">
-				        <span aria-hidden="true">&raquo;</span>
-				      </a>
-				    </li>
-			  	</ul>
-			</nav>
 		</div>
-		
 	</body>
 	<script src="js/commn.js" type="text/javascript" charset="utf-8"></script>
 </html>
