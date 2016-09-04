@@ -18,6 +18,15 @@ $(function(){
 	});
 	$("#fwfw").click(function(){
 		location.href="servce.html"
-	})
+	});
+	$("#cases").click(function(){
+		location.href="cases.html"
+	});
+	$("#about").click(function(){
+		location.href="about.html"
+	});
+	$("#answer").click(function(){
+		location.href="answer.html"
+	});
 });
                             
