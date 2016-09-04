@@ -1,8 +1,23 @@
 $(function(){
-	$(".navs_tem").click(function(){
-		$(this).siblings().removeClass("tem_hover");
+	$(".navs_tem").unbind().click(function(){
+		$(this).siblings(".tem_hover").removeClass("tem_hover");
 		$(this).addClass("tem_hover");
 	});
-	
+	$(".question_title").mouseover(function(){
+		$(this).next().removeClass("hidden").addClass("show");
+		$(this).css("color","#255625").css("font-size","larger");
+		$(this).parent().parent().css("background-color","#C7DDEF");
+	});
+	$(".question_title").mouseout(function(){
+		$(this).next().removeClass("show").addClass("hidden");
+		$(this).css("color","#777777").css("font-size","medium");
+		$(this).parent().parent().css("background-color","#E9E9E9");
+	});
+	$("#sy").click(function(){
+		location.href="index.html";
+	});
+	$("#fwfw").click(function(){
+		location.href="servce.html"
+	})
 });
                             
