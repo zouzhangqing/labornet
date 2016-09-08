@@ -13,20 +13,26 @@ $(function(){
 		$(this).css("color","#777777").css("font-size","medium");
 		$(this).parent().parent().css("background-color","#E9E9E9");
 	});
-	$("#sy").click(function(){
-		location.href="index.html";
+	
+	$("#sy,.returns").click(function(){
+		//location.href="index.html";
+		$('html,body').animate({scrollTop:'0px'}, 800);
 	});
 	$("#fwfw").click(function(){
-		location.href="servce.html"
+		//location.href="servce.html"
+		$('html,body').animate({scrollTop:$('#service').offset().top}, 800);
 	});
 	$("#cases").click(function(){
-		location.href="cases.html"
+		//location.href="cases.html"
+		$('html,body').animate({scrollTop:$('#case').offset().top}, 800);
 	});
 	$("#about").click(function(){
-		location.href="about.html"
+		//location.href="about.html"
+		$('html,body').animate({scrollTop:$('#aboutuser').offset().top}, 800);
 	});
 	$("#answer").click(function(){
-		location.href="answer.html"
+		//location.href="answer.html"
+		$('html,body').animate({scrollTop:$('#question').offset().top}, 800);
 	});
 });
                             
